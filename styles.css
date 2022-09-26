@@ -11,7 +11,7 @@ body {
   justify-content: center;
 }
 
-.slider {
+.partners-container {
   display: flex;
   align-items: center;
   width: 500px;
@@ -20,11 +20,11 @@ body {
   height: 100px;
   overflow-y: scroll;
 }
-.slider::-webkit-scrollbar {
+.partners-container::-webkit-scrollbar {
   width: 0;
 }
 
-.item {
+.partner-preview {
   height: 100%;
   width: 100px;
   flex-shrink: 0;

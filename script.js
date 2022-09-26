@@ -1,12 +1,12 @@
-const slider = document.querySelector('.slider');
+const slider = document.querySelector('.partners-container');
 
 slider.scrollLeft = 1;
 
-const element = document.querySelector('.item');
+const element = document.querySelector('.partner-preview');
 const elementWidth = parseInt(window.getComputedStyle(element,null).getPropertyValue("width"));
 
 slider.addEventListener('scroll', function(ev) {
-  let items = this.querySelectorAll('.item');
+  let items = this.querySelectorAll('.partner-preview');
 
   if (parseInt(this.scrollLeft) == 0) {
     this.scrollLeft = items[items.length - 1].clientWidth;
