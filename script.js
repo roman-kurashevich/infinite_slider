@@ -6,6 +6,11 @@ const element = document.querySelector('.partner-preview');
 const elementWidth = parseInt(window.getComputedStyle(element,null).getPropertyValue("width"));
 
 slider.addEventListener('scroll', function(ev) {
+  // check for mobile device
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    return;
+  }
+
   let items = this.querySelectorAll('.partner-preview');
 
   if (parseInt(this.scrollLeft) == 0) {
